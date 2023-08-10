@@ -1,35 +1,249 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PRODUCT DETAIL</title>
   </head>
   <body class="bg-dark">
 
-    <!-- NAVBAR START -->
-    <nav class="navbar bg-body-tertiary bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="" alt=""> <span style="font-size: 2rem;" class="display-4"> BeeCommerce</span></a>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" style="margin-right: 300px;" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Arama</button>
-        </form>
+     <!-- NAVBAR START -->
+  <nav class="navbar bg-body-tertiary bg-light" style="display: flex; justify-content: space-between;">
+    <div class="container-fluid d-flex justify-content-between">
+      <a class="navbar-brand" href="index.html">
+        <span style="font-size: 2rem; margin-left: 100px;" class="display-4">BeeCommerce</span>
+      </a>
+
+      <form class="search" role="search">
+        <input style="width: 550px; margin-right: 10px;" placeholder="Arama..." type="text">
+        <button type="submit">Ara</button>
+      </form>
+
+      <div style="display: flex; align-items: center;">
+        <button data-quantity="0" class="btn-cart">
+          <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
+            xmlns="http://www.w3.org/2000/svg">
+            <title>icon-cart</title>
+            <path transform="translate(-3.62 -0.85)"
+              d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
+            </path>
+          </svg>
+          <span class="quantity"></span>
+        </button>
+
+        <button class="button-order" style="display: flex; align-items: center; margin-left: 10px;">
+          <i class="fa-solid fa-truck" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
+            xmlns="http://www.w3.org/2000/svg" style="color: #030408;">
+            <path transform="translate(-3.62 -0.85)"
+              d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
+            </path>
+          </i>
+        </button>
+
+        <label class="popup" style="margin-left: 10px;">
+          <input type="checkbox">
+          <div class="user-icon" tabindex="0">
+            <i class="fas fa-user"></i>
+          </div>
+          <nav class="popup-window">
+            <legend>Actions</legend>
+            <ul>
+              <li>
+                <button>
+                  <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none"
+                    viewBox="0 0 24 24" height="14" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle r="4" cy="7" cx="9"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>Colloborators</span>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none"
+                    viewBox="0 0 24 24" height="14" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                  </svg>
+                  <span>Magic Link</span>
+                </button>
+              </li>
+              <hr>
+              <li>
+                <button>
+                  <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none"
+                    viewBox="0 0 24 24" height="14" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <rect ry="2" rx="2" height="13" width="13" y="9" x="9"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Clone</span>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none"
+                    viewBox="0 0 24 24" height="14" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                  </svg>
+                  <span>Edit</span>
+                </button>
+              </li>
+              <hr>
+              <li>
+                <button>
+                  <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none"
+                    viewBox="0 0 24 24" height="14" width="14" xmlns="http://www.w3.org/2000/svg">
+                    <line y2="18" x2="6" y1="6" x1="18"></line>
+                    <line y2="18" x2="18" y1="6" x1="6"></line>
+                  </svg>
+                  <span>Delete</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </label>
       </div>
-    </nav>
-    <!-- NAVBAR END -->
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+  <!-- NAVBAR START -->
+  <nav class="navbar bg-body-tertiary bg-light" style="display: flex; justify-content: space-between;">
+    <div class="container-fluid d-flex justify-content-between mx-5">
+
+      <div class="dropdown-menu-container">
+        <div class="dropdown-item">
+          <button class="dropdown-button">Kategori 1</button>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="#">Alt Kategori 1</a>
+            <a class="dropdown-link" href="#">Alt Kategori 2</a>
+            <!-- Diğer alt kategoriler -->
+          </div>
+        </div>
+        <div class="dropdown-divider">|</div>
+        <div class="dropdown-item">
+          <button class="dropdown-button">Kategori 2</button>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="#">Alt Kategori 1</a>
+            <a class="dropdown-link" href="#">Alt Kategori 2</a>
+            <!-- Diğer alt kategoriler -->
+          </div>
+        </div>
+        <div class="dropdown-item">
+          <button class="dropdown-button">Kategori 3</button>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="#">Alt Kategori 1</a>
+            <a class="dropdown-link" href="#">Alt Kategori 2</a>
+            <!-- Diğer alt kategoriler -->
+          </div>
+        </div>
+        <div class="dropdown-item">
+          <button class="dropdown-button">Kategori 4</button>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="#">Alt Kategori 1</a>
+            <a class="dropdown-link" href="#">Alt Kategori 2</a>
+            <!-- Diğer alt kategoriler -->
+          </div>
+        </div>
+        <div class="dropdown-item">
+          <button class="dropdown-button">Kategori 5</button>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="#">Alt Kategori 1</a>
+            <a class="dropdown-link" href="#">Alt Kategori 2</a>
+            <!-- Diğer alt kategoriler -->
+          </div>
+        </div>
+        <div class="dropdown-item">
+          <button class="dropdown-button">Kategori 6</button>
+          <div class="dropdown-content">
+            <a class="dropdown-link" href="#">Alt Kategori 1</a>
+            <a class="dropdown-link" href="#">Alt Kategori 2</a>
+            <!-- Diğer alt kategoriler -->
+          </div>
+        </div>
+        <!-- Diğer Dropdown Menüleri benzer şekilde ekleyebilirsiniz -->
+      </div>
+
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
 
     <div>
         MERHABA BU SAYFA PRODUCTDETAIL SAYFASI
     </div>
 
 
+    <!-------------------------------------------------------------FOOTER START------------------------------------------------------->
+
+<footer class="footer bg-light text-dark">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h2>BeeCommerce</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+      </div>
+  </div>
+  <div class="footer-section">
+      <h3>About</h3>
+      <ul>
+          <li>About Us</li>
+          <li>Find Store</li>
+          <li>Categories</li>
+          <li>Blogs</li>
+      </ul>
+  </div>
+  <div class="footer-section">
+      <h3>Partnership</h3>
+      <ul>
+          <li>About Us</li>
+          <li>Find Store</li>
+          <li>Categories</li>
+          <li>Blogs</li>
+      </ul>
+  </div>
+  <div class="footer-section">
+      <h3>Information</h3>
+      <ul>
+          <li>Help Center</li>
+          <li>Money Refund</li>
+          <li>Shipping</li>
+          <li>Contact Us</li>
+      </ul>
+  </div>
+  <div class="footer-section">
+      <h3>For Users</h3>
+      <ul>
+          <li>Login</li>
+          <li>Register</li>
+          <li>Settings</li>
+          <li>My Order</li>
+      </ul>
+  </div>
+  </div>
+</footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+<!-------------------------------------------------------------FOOTER END------------------------------------------------------->
+
+
+
+
+<script src="https://kit.fontawesome.com/a8702003e2.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
 </html>

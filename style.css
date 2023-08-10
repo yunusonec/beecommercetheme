@@ -2,6 +2,8 @@
 
 /* GENERAL */
 
+
+
 .main-content {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@
 }
 
 .default-content {
-  width: 1000px;
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -549,30 +551,92 @@
 
 /* ---------------------------------------BİG BLUE DİV END -------------------------------------------------------- */
 
+/* ------------------------------------------------- CARD SECTION ------------------------------------------------------ */
+.card-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+  margin-bottom: 20px; /* Alt kısma boşluk bırakmak için */
+}
+
+#recommended-main {
+  padding: 10px;
+  padding-bottom: 20px;
+  border: none;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
 
 #recommended #recommended1  {
   display: flex;
   flex-wrap: wrap;
   
   gap: 10px;
-  height: 500px;
-  padding: 10px;
+
+
   
 }
 
 .card {
-  width: 180px;
-  height: 360px;
+  width: 222px;
+  height: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+h3.display-4 {
+
+    margin: 10px;
+    text-align: left;
+}
+
+.recommended-title {
+  text-align: left;
+  margin: 10px;
 }
 
 
+/* ------------------------------------------------- CARD SECTION END  ------------------------------------------------------ */
+
+/* ---------------------------------------------------FOOTER START ------------------------------------------------------------ */
 
 
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 40px 0;
+  border-top: 1px solid #d8d8d8;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1);
 
+}
 
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ---------------------------------------------------FOOTER END ------------------------------------------------------------ */
