@@ -21,6 +21,8 @@ body {
 
 a {
     text-decoration: none;
+    color: #FFC107;
+
 }
 
 
@@ -43,6 +45,10 @@ color: rgba(139, 150, 165, 1);
 .navbar {
     background-color: white;
     border-bottom: 1px solid rgba(222, 226, 231, 1);
+}
+.navbar-logo    {
+    text-decoration: none;
+    color: black;
 }
 
 #header {
@@ -71,35 +77,59 @@ color: rgba(139, 150, 165, 1);
 /********************************************************** NAVBAR END ******************************************************/
 
 /*********************************************************** CONTENT START ******************************************************/
-.container  {
+*.container  {
     margin-top: 30px;
+    max-width: 1180px !important;
+    width: 100%;
+    height: 100%;
 }
+
+/************************************************************* CAROUSEL START *************************************************/
+.carousel-sidebar-button    {
+width: 250px;
+height: 40px;
+}
+
+.carousel-sidebar-button>a  {
+    color: #3f4656;
+}
+.carousel-sidebar-button>a:hover   {
+    
+    color: black;
+}
+
+.carousel-sidebar-button:hover    {
+    background-color: #FFC107 !important;
+    border-radius: 3px;
+    overflow: hidden;
+}
+/************************************************************* CAROUSEL END *************************************************/
+
 /*********************************************************** CARD START ******************************************************/
 #sale-section  {
     border: 1px solid rgba(222, 226, 231, 1);
     border-radius: 3px;
     }
 
+
+
 .cards   {
-    margin-right: 0;
-    margin-left: auto;
-    width: 100%;
+
+    width: 224.5px;
+    height: 127px;
     
 }
 
-.cards-inner    {
-    height: 127px;
+.cards-body   {
+margin-top: 20px;
+margin-left: 16.07px;
+text-size-adjust: 16px;
 }
-
-
 
 .cards-body,.cards-title,.cards-text   {
     color: black;
 }
-.cards-img-top   {
-    max-width: 100px;
-    max-height: 120px;
-}
+
 
 .badge.rounded-pill    {
     background: rgba(255, 227, 227, 1);
@@ -113,8 +143,7 @@ color: rgba(139, 150, 165, 1);
         border: 1px solid rgba(222, 226, 231, 1);
         border-radius: 3px;
         overflow: hidden;
-        padding-left: 0 !important;
-    
+        padding-left: 0 !important;    
 }
 
 
@@ -288,7 +317,11 @@ color: rgba(139, 150, 165, 1);
 /* RANGE END */
 
 
+/* BREADCRUMB */
 
+.breadcrumb-item>a   {
+    color: #FFC107;
+}
 
 
 

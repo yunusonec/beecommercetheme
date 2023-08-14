@@ -18,13 +18,14 @@
 <!------------------------------------------------------HEADER START-------------------------------------------------->
 <nav class="navbar navbar-expand-lg" id="header">
   <div class="container-fluid col-8">
-      <a class="navbar-brand display-2" href="index.html">BeeCommerce</a>
+    
+    <a class="navbar-logo display-2 fs-1 border-0" href="index.html"><img class="mx-3 mb-2" src="img/beecommercelogo40x36.png" alt="">BeeCommerce</a>
       <div class="d-flex align-items-center col-4">
-          <form class="d-flex search" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-      </div>
+        <form class="d-flex search" role="search">
+            <input class="form-control me-2" type="search" placeholder="Aradığınız ürünü yazın" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Ara</button>
+        </form>
+    </div>
       <div class="col-2">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -54,7 +55,7 @@
   </div>
 </nav>
 
-  
+
 <!------------------------------------------------------HEADER END-------------------------------------------------->
 
 <!------------------------------------------------------NAVBAR START-------------------------------------------------->
@@ -94,290 +95,355 @@
   </nav>
 <!------------------------------------------------------NAVBAR END-------------------------------------------------->
 
+
 <!------------------------------------------------------CONTENT START--------------------------------------------------->
 
-<div class="container-fluid" id="content">
-    <div class="row">
-        <div class="col-12">
-            <!-- Buraya mevcut içeriği ekleyin -->
-            <!-- SALE START, CatePrev1, CatePrev2, RECOMMENDED START, FOOTER gibi bölümler yer alacak -->
-        </div>
+<!------------------------------------------------------- CAROUSEL START ----------------------------------------------------->
+
+
+<div class="container border border-1 border-rounded d-flex">
+  <div class="col-3">
+    <div class="sidebar d-flex flex-column my-3">
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
+      <button class="carousel-sidebar-button border-0 bg-white d-flex justify-content-start "><a href=""><span class="display-4 fs-5">Home</span></a></button>
     </div>
+  </div>
+
+  <div class="col-7 py-3">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <div class="card text-white">
+            <img src="https://picsum.photos/665/360" class="d-block" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        <div class="carousel-item">
+          <div class="card text-white">
+            <img src="https://picsum.photos/665/360" class="d-block" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card text-white">
+            <img src="https://picsum.photos/665/360" class="d-block" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="sidebar d-flex flex-column justify-content-between">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
 </div>
 
+
+
+<!------------------------------------------------------- CAROUSEL START ----------------------------------------------------->
+
 <!------------------------------------------------------- SALE START------------------------------------------------------->
-<div class="container d-flex flex-col" id="sale-section">
-    <div class="col-3">
-        <h3>Kampanyalı Ürünler</h3>
-        <div class="color-gray-500">Rastgele ürün kategorisi</div>
-    </div>
-    <div class="col-9 d-flex flex-row  justify-content-end">
-        <hr>
-        <div><a href=""><div class="cards p-2">
-            <div class="cards-inner d-flex justify-content-center "style="width: 179px;">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            <div class="cards-body  my-3 d-flex flex-column">
-              <h5 class="cards-title d-flex justify-content-center ">Kategori</h5>
-                <div class=" d-flex justify-content-center">
-                    <span class="badge rounded-pill text-danger">İndirim</span>
-                </div>
-              
-              
-            </div>
-          </div></a></div>
-          <hr>
-          <div><a href=""><div class="cards p-2">
-            <div class="cards-inner d-flex justify-content-center "style="width: 179px;">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3 " alt="https://picsum.photos/100/120">
-            </div>
-            <div class="cards-body  my-3 d-flex flex-column">
-              <h5 class="cards-title d-flex justify-content-center ">Kategori</h5>
-                <div class=" d-flex justify-content-center">
-                    <span class="badge rounded-pill text-danger">İndirim</span>
-                </div>
-            </div>
-          </div></a></div>
-          <hr>
-          <div><a href=""><div class="cards p-2">
-            <div class="cards-inner d-flex justify-content-center "style="width: 179px;">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3 " alt="https://picsum.photos/100/120">
-            </div>
-            <div class="cards-body  my-3 d-flex flex-column">
-              <h5 class="cards-title d-flex justify-content-center ">Kategori</h5>
-                <div class=" d-flex justify-content-center">
-                    <span class="badge rounded-pill text-danger">İndirim</span>
-                </div>
-            </div>
-          </div></a></div>
-          <hr>
-          <div><a href=""><div class="cards p-2">
-            <div class="cards-inner d-flex justify-content-center "style="width: 179px;">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3 " alt="https://picsum.photos/100/120">
-            </div>
-            
-            <div class="cards-body  my-3 d-flex flex-column">
-              <h5 class="cards-title d-flex justify-content-center ">Kategori</h5>
-                <div class=" d-flex justify-content-center">
-                    <span class="badge rounded-pill text-danger">İndirim</span>
-                </div>
-            </div>
-          </div></a></div>
-          <hr>
-          
-          <div><a href=""><div class="cards p-2">
-            <div class="cards-inner d-flex justify-content-center "style="width: 179px;">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3 " alt="https://picsum.photos/100/120">
-            </div>
-            <div class="cards-body  my-3 d-flex flex-column">
-              <h5 class="cards-title d-flex justify-content-center ">Kategori</h5>
-                <div class=" d-flex justify-content-center">
-                    <span class="badge rounded-pill text-danger">İndirim</span>
-                </div>
-            </div>
-          </div></a></div>
-    </div>
-</div>
+
 
 <!--------------------------------------------------------------- SALE END -------------------------------------------------------->
 
 <!--CatPrev1 -->
 
 <div class="container d-flex flex-col" id="category-preview1">
-    <div class="col-3">
-        <div id="category-preview2-img" class="col-3 p-0">
-            <div><img style="padding: 0;" src="https://picsum.photos/325/465" alt=""></div>
+
+  <div class="">
+      <div class="p-0 category-preview-img">
+          <div><img class="p-0" src="https://picsum.photos/280/257" alt=""></div>
+      </div>
+  </div>
+
+  <div class="card-container col-9 d-flex flex-row ">
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
         </div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
     </div>
-    <div class="col-9 d-flex flex-row  justify-content-end">
-        <hr>
-        <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
         </div>
-          <hr>
-          <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
         </div>
-          <hr>
-          <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-        </div>
-          <hr>
-          <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-        </div>
+      </div>
     </div>
-</div>
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  </div>
 
 <!-- CatPrev2 -->
 
 <div class="container d-flex flex-col" id="category-preview1">
-    <div id="category-preview1-img" class="col-3 p-0">
-        <div><img style="padding: 0;" src="https://picsum.photos/325/465" alt=""></div>
+
+  <div class="">
+      <div class="p-0 category-preview-img">
+          <div><img class="p-0" src="https://picsum.photos/280/257" alt=""></div>
+      </div>
+  </div>
+
+  <div class="card-container col-9 d-flex flex-row ">
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
     </div>
-    <div class="col-9 d-flex flex-row  justify-content-end">
-        <hr>
-        <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
         </div>
-          <hr>
-          <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
         </div>
-          <hr>
-          <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-        </div>
-          <hr>
-          <div class="row"><div><a href=""><div class="cards p-2 border-bottom">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-          <div><a href=""><div class="cards p-2 ">
-            <div class="cards-body  my-3">
-              <h5 class="cards-title">Kategori</h5>
-              <span class="color-gray-500">Fiyat</span>
-            </div>
-            <div class="cards-inner d-flex justify-content-end align-content-end align-items-end mx-0">
-                <img src="https://picsum.photos/100/120" class="cards-img-top my-3" alt="https://picsum.photos/100/120">
-            </div>
-            
-          </div></a></div>
-        </div>
+      </div>
     </div>
-</div>
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+
+      <div>
+        <div class="cards border border-end-1 border-bottom-0 d-flex">
+          <div class="cards-body">
+            <h5 style="margin-bottom: 9px;" class="cards-title">Kategori</h5>
+            <span class="color-gray-500">Fiyat</span>
+          </div>
+
+          <div class="ms-auto align-self-end">
+            <img src="https://picsum.photos/82/82" class="cards-img-top cards-img" alt="https://picsum.photos/82/82">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  </div>
 
 <!-----------------------------------------------CATE PREV2 END---------------------------------------------->
 
@@ -391,7 +457,7 @@
       
       <p class="card-text">Ürünlerimize göz atmak için butona basın.</p>
 
-      <button class="btn btn-primary my-5 mx-1" type="button">Ürünlerimiz</button>
+      <button class="btn btn-warning my-5 mx-1" type="button">Ürünlerimiz</button>
     </div>
   </div>
 </div>
@@ -536,12 +602,12 @@
   
         <div class="col-md-5 offset-md-1 mb-3">
           <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
+            <h5>Abonemiz ol</h5>
+            <p>.</p>
             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
+              <label for="newsletter1" class="visually-hidden">Email adresi</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email adresi">
+              <button class="btn btn-warning " type="button">Abone ol</button>
             </div>
           </form>
         </div>

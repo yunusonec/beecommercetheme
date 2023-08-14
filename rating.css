@@ -21,7 +21,7 @@
   .rating input:checked ~ label,
   .rating label:hover,
   .rating label:hover ~ label {
-    color: #6f00ff;
+    color: #ffdd00;
     transition: color 0.3s;
   }
   
